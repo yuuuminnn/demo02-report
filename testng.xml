@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--<suite name="All Test Suite">-->
+<!--    <test verbose="2" preserve-order="true" name="C:/WorkSpace/demo02">-->
+<!--        <classes>-->
+<!--            <class name="MyRunner.TestRunner">-->
+<!--                <methods>-->
+<!--                    <include name="feature"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
+
+<suite name="BDD Test Suite" verbose="1" parallel="tests"
+       thread-count="1" configfailurepolicy="continue">
+    <test name="FREE CRM Test" annotations="JDK"
+          preserve-order="true">
+        <classes>
+            <class name="MyRunner.TestRunner" />
+        </classes>
+    </test>
+</suite>
